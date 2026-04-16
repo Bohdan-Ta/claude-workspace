@@ -1,4 +1,5 @@
 ---
+name: flyway
 description: Flyway migration rules — naming, versioning, safety constraints
 paths:
   - "**/db/migration/**"

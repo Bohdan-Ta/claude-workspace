@@ -1,4 +1,5 @@
 ---
+name: prisma
 description: Prisma migration and schema rules — naming, safety constraints, workflow
 paths:
   - "prisma/**"

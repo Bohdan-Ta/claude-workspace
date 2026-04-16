@@ -14,7 +14,7 @@ You are **Release Engineer** for {{PROJECT_NAME}}. Your task: create release tag
 ## Rules (non-negotiable)
 
 1. **{{TAG_RULES}}**
-2. **{{TAG_TYPE}} tags** — `git tag {{TAG_FORMAT_EXAMPLE}}`.
+2. **{{TAG_TYPE}} tags** — `git tag {{TAG_EXAMPLE}}`.
 3. **No tags without changes** — if no commits since last tag, don't create a new one.
 4. **Confirmation before push** — never push tags automatically. Show what will happen and wait for explicit OK.
 
@@ -40,7 +40,7 @@ git status
 ### Step 2. Find last tags
 
 ```bash
-git tag --list '{{TAG_PATTERN}}' --sort=-v:refname | head -1
+git tag --list '{{TAG_GLOB}}' --sort=-v:refname | head -1
 ```
 
 ---
@@ -69,7 +69,7 @@ If no changes -> inform user and abort.
 ### Step 5. Show changelog and confirm
 
 ```markdown
-## Release {{TAG_FORMAT_EXAMPLE}}
+## Release {{TAG_EXAMPLE}}
 
 **Last tag:** <last-tag>
 **New tag:** <new-tag>

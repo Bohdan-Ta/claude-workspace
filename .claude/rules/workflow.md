@@ -208,25 +208,9 @@ After any change to `@RestController`, DTOs, or Bean Validation annotations, reg
 
 ## i18n — New User-Facing Strings
 
-**Directory:** {{I18N_PATH}}
+Full rules in `.claude/rules/i18n.md` (auto-loaded when editing i18n/component files).
 
-{{I18N_LANGUAGE_COUNT}} languages: {{I18N_LANGUAGES}}.
-
-### Steps
-
-1. **Choose key:** nested, descriptive, domain-driven (e.g., `events.cancel.confirmButton`)
-2. **Update ALL {{I18N_LANGUAGE_COUNT}} files simultaneously**
-3. **Use in component:**
-   ```typescript
-   const { t } = useTranslation();
-   <Button>{t("events.cancel.confirmButton")}</Button>
-   ```
-
-### Rules
-
-- **Never add a key in only one language** — others show raw key text.
-- **Plural rules:** i18next syntax (`_one`, `_other`) when relevant.
-- **No hardcoded strings** in user-facing components.
+**Quick reference:** {{I18N_LANGUAGE_COUNT}} languages ({{I18N_LANGUAGES}}). Always update all language files simultaneously. No hardcoded strings.
 
 ---
 

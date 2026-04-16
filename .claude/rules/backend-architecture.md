@@ -1,4 +1,5 @@
 ---
+name: backend-architecture
 description: Detailed backend architecture — modules, services, database schema, security, and configuration
 paths:
   - "{{BACKEND_PATH}}**"

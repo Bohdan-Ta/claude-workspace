@@ -1,4 +1,5 @@
 ---
+name: frontend-architecture
 description: Detailed frontend architecture patterns, components, state management, and auth flow
 paths:
   - "{{FRONTEND_PATH}}**"

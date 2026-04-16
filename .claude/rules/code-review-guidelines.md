@@ -1,4 +1,5 @@
 ---
+name: code-review-guidelines
 description: Code review standards, priorities, and patterns for AI-assisted reviews
 ---
 
